@@ -66,7 +66,6 @@ If the backend is unreachable or the user’s IP is rate-limited, the UI shows a
 ## 🧰 How to Run Locally
 
 ### 📂 Repo Layout
-
 / (root)
 ├─ frontend/                 # React/Vite app (UI)
 │  ├─ src/
@@ -87,7 +86,6 @@ This project requires the **crypto-backend** to be running first.
 (See that repo’s README for details.)
 
 ### 2️⃣ Clone this Repository
-```bash
 git clone https://github.com/Ajithreddy2609/frontend-crypto
 
 3️⃣ Navigate to the Folder
@@ -102,6 +100,8 @@ npm run dev
 6️⃣ Open in Browser
 
 👉 http://localhost:5173
+
+
 
 🏛️ Solution Architecture
 
