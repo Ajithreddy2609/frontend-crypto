@@ -1,0 +1,160 @@
+/* --- 1. RESET & NEW FONT --- */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* --- 2. "APP SHELL" LAYOUT (HEADER & CONTENT) --- */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #3a3a3a;
+  padding: 1rem 2rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  color: #58c4dc;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.app-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* --- 3. DATA-RICH LIST (5-COLUMN LAYOUT) --- */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.coin-link-card {
+  display: grid;
+  /* This is the 5-column grid: */
+  grid-template-columns: 2fr 1.5fr 1.5fr 2fr 1.5fr; 
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background-color: #242424;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.coin-link-card:hover {
+  background-color: #3a3a3a;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.coin-image {
+  width: 40px;
+  height: 40px;
+}
+
+.coin-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.coin-symbol {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.coin-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.price-up {
+  color: #4ade80; /* Green */
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.price-down {
+  color: #f87171; /* Red */
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.coin-stats {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #ccc;
+}
+
+.coin-marketcap {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #ccc;
+}
+
+.stat-label {
+  color: #888;
+  margin-right: 0.5rem;
+}
+
+.coin-sparkline {
+  /* This div holds the sparkline chart */
+  width: 100%;
+  height: 40px;     /* Gives the chart a consistent height */
+  min-width: 100px;   /* Prevents it from collapsing too small */
+}
+
+/* --- 4. LOADING SPINNER --- */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #444;
+  border-bottom-color: #58c4dc; /* The "Crypto" blue */
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 5rem auto; /* More margin */
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
