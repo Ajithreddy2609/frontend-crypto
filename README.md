@@ -15,6 +15,7 @@ All data requests are proxied through a **small server-side gateway** that:
 ## 🌐 Live Demo
 🔗 (https://frontend-crypto-sandy.vercel.app/)
 
+
 ## 🖥️ Backend Repository
 📦 (https://github.com/Ajithreddy2609/backend-crypto)
 
