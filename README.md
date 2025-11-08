@@ -138,8 +138,6 @@ This ensures efficiency, performance, and API cost control.
 
 
 🔴 Live Demo: https://frontend-crypto-sandy.vercel.app/
-
-🎥 Loom Walkthrough: [ADD LINK HERE]
 👤 Author: Ajith P
 
 
