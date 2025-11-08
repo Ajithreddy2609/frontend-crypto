@@ -68,17 +68,18 @@ If the backend is unreachable or the user’s IP is rate-limited, the UI shows a
 ### 📂 Repo Layout
 
 / (root)
-├─ frontend/ # React/Vite app (UI)
-│ ├─ src/
-│ ├─ package.json
-│ └─ .env.example (VITE_BACKEND_BASE_URL)
-├─ server/ # Lightweight Node/Express proxy
-│ ├─ index.js
-│ ├─ package.json
-│ └─ .env.example
-├─ docker-compose.yml # Optional: redis + server for demos
-├─ README.md # This file
-└─ docs/ # Architecture diagrams, notes
+├─ frontend/                 # React/Vite app (UI)
+│  ├─ src/
+│  ├─ package.json
+│  └─ .env.example (VITE_BACKEND_BASE_URL)
+├─ server/                   # Lightweight Node/Express proxy
+│  ├─ index.js
+│  ├─ package.json
+│  └─ .env.example
+├─ docker-compose.yml        # Optional: redis + server for demos
+├─ README.md                 # This file
+└─ docs/                     # Architecture diagrams, notes
+
 
 
 ### 1️⃣ Start the Backend Server
