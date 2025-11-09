@@ -150,29 +150,29 @@ To experience the real-time WebSocket functionality as designed, please clone th
 This project is a monorepo containing the server and client. You will need two terminals.
 ## Local Setup Instructions:
 
-# Clone the repository:
+#Clone the repository:
 # In a new folder for your projects
  git clone https://https://github.com/Ajithreddy2609/backend-crypto.git
  cd https://github.com/Ajithreddy2609/backend-crypto
 
-# Install & Run the Backend:
+#Install & Run the Backend:
  # /backend-repo/.env
  YOUR_CRYPTO_API_KEY=paste_your_key_here
 
-# Install dependencies and start the server:
+#Install dependencies and start the server:
  npm install
  npm start
 
  
-# Your backend will now be running (e.i. on http://localhost:3000).
+#Your backend will now be running (e.i. on http://localhost:3000).
 
-# Clone the Frontend (in a new terminal):
-  # Go back to your main projects folder
+#Clone the Frontend (in a new terminal):
+  #Go back to your main projects folder
   cd .. 
   git clone https://(https://github.com/Ajithreddy2609/frontend-crypto).git
   cd https://github.com/Ajithreddy2609/frontend-crypto
 
-# Install & Run the Frontend:
+#Install & Run the Frontend:
  Install dependencies and start the app:
   npm install
   npm run dev
@@ -180,7 +180,7 @@ This project is a monorepo containing the server and client. You will need two t
 npm run dev
 
 
-## View the App: Open http://localhost:5173 (or your frontend's default port) in your browser. You will now see the app with the live WebSocket stream fully functional.
+# View the App: Open http://localhost:5173 (or your frontend's default port) in your browser. You will now see the app with the live WebSocket stream fully functional.
 
 ----
 
