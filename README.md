@@ -11,26 +11,6 @@ All data requests are proxied through a **small server-side gateway** that:
 - 📡 Broadcasts small live updates over one WebSocket channel
 
 ---
-## 🚀 How to Run Locally
-
-This project is a monorepo containing the server and client. You will need two terminals.
-
-### 1️ Start the Backend Server
-```bash
-# From the project root, navigate to the server
-cd server
-
-# Install dependencies
-npm install
-
-# Create a .env file and add your API_KEY
-# (See .env.example)
-touch .env
-echo "API_KEY=your-secret-key-here" > .env
-
-# Run the server
-npm start
-
 
 ## 🌐 Live Demo
 🔗 (https://frontend-crypto-sandy.vercel.app/)
