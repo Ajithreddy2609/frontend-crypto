@@ -174,8 +174,8 @@ This project is a monorepo containing the server and client. You will need two t
 
 # Clone the repository:
 # In a new folder for your projects
- git clone https://github.com/[Your-Username]/[Your-BACKEND-Repo-Name].git
- cd [Your-BACKEND-Repo-Name]
+ git clone https://https://github.com/Ajithreddy2609/backend-crypto.git
+ cd https://github.com/Ajithreddy2609/backend-crypto
 
 # Install & Run the Backend:
  # /backend-repo/.env
@@ -191,8 +191,8 @@ This project is a monorepo containing the server and client. You will need two t
 # Clone the Frontend (in a new terminal):
   # Go back to your main projects folder
   cd .. 
-  git clone https://github.com/[Your-Username]/[Your-FRONTEND-Repo-Name].git
-  cd [Your-FRONTEND-Repo-Name]
+  git clone https://(https://github.com/Ajithreddy2609/frontend-crypto).git
+  cd https://github.com/Ajithreddy2609/frontend-crypto
 
 # Install & Run the Frontend:
  Install dependencies and start the app:
