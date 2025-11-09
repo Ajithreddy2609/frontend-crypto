@@ -11,6 +11,43 @@ All data requests are proxied through a **small server-side gateway** that:
 - 📡 Broadcasts small live updates over one WebSocket channel
 
 ---
+## 🚀 How to Run Locally
+
+This project is a monorepo containing the server and client. You will need two terminals.
+
+### 1️ Start the Backend Server
+```bash
+# From the project root, navigate to the server
+cd server
+
+# Install dependencies
+npm install
+
+# Create a .env file and add your API_KEY
+# (See .env.example)
+touch .env
+echo "API_KEY=your-secret-key-here" > .env
+
+# Run the server
+npm start
+(Server will be running on http://localhost:3001)
+
+
+### 2 Start the Frontend Client
+# In a new terminal, from the project root
+cd client
+
+# Install dependencies
+npm install
+
+# Create the .env.local file
+touch .env.local
+echo "VITE_API_BASE_URL=http://localhost:3001" > .env.local
+
+# Run the client
+npm run dev
+(Client will be running on http://localhost:5173)
+
 
 ## 🌐 Live Demo
 🔗 (https://frontend-crypto-sandy.vercel.app/)
@@ -19,6 +56,18 @@ All data requests are proxied through a **small server-side gateway** that:
 📦 (https://github.com/Ajithreddy2609/backend-crypto)
 
 ---
+
+## 📂 Project Structure
+
+This project is a monorepo containing two main packages:
+
+/server
+  - The Node.js, Express, and Socket.io backend.
+  - Manages all API calls, caching, and rate-limiting.
+
+/client
+  - The React (Vite) frontend.
+  - Contains all UI components, charts, and routing.
 
 ## ✨ Features
 
