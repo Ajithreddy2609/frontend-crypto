@@ -30,23 +30,6 @@ echo "API_KEY=your-secret-key-here" > .env
 
 # Run the server
 npm start
-(Server will be running on http://localhost:3001)
-
-
-### 2 Start the Frontend Client
-# In a new terminal, from the project root
-cd client
-
-# Install dependencies
-npm install
-
-# Create the .env.local file
-touch .env.local
-echo "VITE_API_BASE_URL=http://localhost:3001" > .env.local
-
-# Run the client
-npm run dev
-(Client will be running on http://localhost:5173)
 
 
 ## 🌐 Live Demo
@@ -174,6 +157,8 @@ Store & Return: Cache new data (TTL 120s) and return it
 
 This ensures efficiency, performance, and API cost control.
 
+
+
 🧩 Tech Summary (Backend Focus)
 | Category      | Technology  | Purpose                           |
 | ------------- | ----------- | --------------------------------- |
@@ -184,6 +169,47 @@ This ensures efficiency, performance, and API cost control.
 | 🔗 API Client | Axios       | Makes HTTP requests               |
 | 🧩 Frontend   | React + CSS | Fast, lightweight UI              |
 | 🔁 Real-Time  | Socket.io   | WebSocket updates                 |
+
+
+## 🚀 How to Run Locally
+
+This project is a monorepo containing the server and client. You will need two terminals.
+
+### 1️⃣ Start the Backend Server
+```bash
+# From the project root, navigate to the server
+cd server
+
+# Install dependencies
+npm install
+
+# Create a .env file and add your API_KEY
+# (See .env.example)
+touch .env
+echo "API_KEY=your-secret-key-here" > .env
+
+# Run the server
+npm start
+
+(Server will be running on http://localhost:3001)
+
+
+### 2 Start the Frontend Client
+# In a new terminal, from the project root
+cd client
+
+# Install dependencies
+npm install
+
+# Create the .env.local file
+touch .env.local
+echo "VITE_API_BASE_URL=http://localhost:3001" > .env.local
+
+# Run the client
+npm run dev
+(Client will be running on http://localhost:5173)
+
+
 
 
 🔴 Live Demo: https://frontend-crypto-sandy.vercel.app/
