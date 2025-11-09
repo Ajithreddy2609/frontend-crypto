@@ -75,28 +75,6 @@ If the backend is unreachable or the user’s IP is rate-limited, the UI shows a
 
 ---
 
-### 1️⃣ Start the Backend Server
-This project requires the **crypto-backend** to be running first.  
-(See that repo’s README for details.)
-
-### 2️⃣ Clone this Repository
-git clone https://github.com/Ajithreddy2609/frontend-crypto
-
-3️⃣ Navigate to the Folder
-cd crypto-frontend
-
-4️⃣ Install Dependencies
-npm install
-
-5️⃣ Run the App
-npm run dev
-
-6️⃣ Open in Browser
-
-👉 http://localhost:5173
-
-
-
 🏛️ Solution Architecture
 
 The system is designed as a decoupled client-server architecture for security and performance:
