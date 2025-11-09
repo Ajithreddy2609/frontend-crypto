@@ -128,35 +128,35 @@ This ensures efficiency, performance, and API cost control.
 | 🧩 Frontend   | React + CSS | Fast, lightweight UI              |
 | 🔁 Real-Time  | Socket.io   | WebSocket updates                 |
 
-### Note  ###
+## Note  ##
 
-## 🚀 Key Feature: Real-Time Price Updates (WebSockets)
+# 🚀 Key Feature: Real-Time Price Updates (WebSockets)
 This application implements a WebSocket connection to stream cryptocurrency price data directly to the user interface. This provides instant, real-time updates for the 30-day detail view, showcasing a stateful, persistent server-client connection.
 
-## ⚠️ A Note on the Live Vercel Deployment
+# ⚠️ A Note on the Live Vercel Deployment
 The live demo for this project is hosted on Vercel, an outstanding platform for serverless applications.
 
 However, Vercel's serverless architecture is designed for ephemeral (short-lived) functions. This environment does not support the persistent, "always-on" connection required for a WebSocket server.
 
 Therefore, the live WebSocket feature is intentionally disabled on the Vercel deployment.
 
-## Seeing the Full-Featured App in Action
+# Seeing the Full-Featured App in Action
 To experience the real-time WebSocket functionality as designed, please clone this repository and run the project on your local machine. The setup is quick and straightforward.
 
 --
 
-## 🚀 How to Run Locally
+# 🚀 How to Run Locally
 
 This project is a monorepo containing the server and client. You will need two terminals.
-## Local Setup Instructions:
+# Local Setup Instructions:
 
 #Clone the repository:
-# In a new folder for your projects
+#In a new folder for your projects
  git clone https://https://github.com/Ajithreddy2609/backend-crypto.git
  cd https://github.com/Ajithreddy2609/backend-crypto
 
 #Install & Run the Backend:
- # /backend-repo/.env
+ #/backend-repo/.env
  YOUR_CRYPTO_API_KEY=paste_your_key_here
 
 #Install dependencies and start the server:
@@ -180,7 +180,7 @@ This project is a monorepo containing the server and client. You will need two t
 npm run dev
 
 
-# View the App: Open http://localhost:5173 (or your frontend's default port) in your browser. You will now see the app with the live WebSocket stream fully functional.
+View the App: Open http://localhost:5173 (or your frontend's default port) in your browser. You will now see the app with the live WebSocket stream fully functional.
 
 ----
 
